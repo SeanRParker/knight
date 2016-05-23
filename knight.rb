@@ -8,25 +8,63 @@ Dir[File.dirname(__FILE__) + '/lib/mechanics/*.rb'].each {|file| require file}
 include Mechanics
 
 $player = Mechanics::Player.new(" ")
-get '/' do
+
+	get '/' do
 	erb :player
-end
+	end
 
-get '/continue_lady' do
-	@name = params[:name]
-	# @player.name = @name
-	erb :lady_version
-end
+	get '/continue_lady' do
+		@name = params[:name]
+		# @player.name = @name
+		erb :lady_version
+	end
 
-get '/continue_sir' do
-	erb :sir_version
-end
+	get '/continue_sir' do
+		erb :sir_version
+	end
 
-post '/name' do
-	@name = params[:name]
-    $player.name = @name
-    erb :story
-end
+	get '/duel' do
+
+	end
+
+	get '/surrender' do
+		erb :surrender
+	end
+
+	get '/decline' do
+		
+		"Knight kills you anyway."
+		"Well, I did give you a chance."
+	end
+
+	get '/kill' do
+		"I can find my own way.
+		""(This option keeps you lost and you can't find the way. 
+		You eventually die of starvation. embarassing messages ensue)
+	    death module"
+	end
+
+	get '/steal' do
+		 "I'll let you live, but I'm taking these."
+		 "(You proceed to take Sir Jabsalot's horse and sword)
+		 The horse leads you to the nearest town, because horses are smart, and that's where he happens to stable.
+		 Once at the stable he refuses to go anywhere else with you, but at least you're in town."
+	end
+
+	get '/live' do
+		"Sure. I could use the help, I don't know where I am"
+	    "Sir Jabsalot tells you,"
+	    "Walk that way for 100 paces, there'll be a road. Follow it to the right for two miles and you'll be in town." 
+	    "You trust him and end up in town."
+	end
+
+	post '/name' do
+		@name = params[:name]
+	    $player.name = @name
+	    erb :story
+	end
+
+
 
 get '/duel' do
 	erb :duel
