@@ -23,10 +23,6 @@ $player = Mechanics::Player.new(" ")
 		erb :sir_version
 	end
 
-	get '/duel' do
-
-	end
-
 	get '/surrender' do
 		erb :surrender
 	end
@@ -66,26 +62,26 @@ $player = Mechanics::Player.new(" ")
 
 
 
-get '/duel' do
-	erb :duel
-end
+	get '/duel' do
+		erb :duel
+	end
 
-get '/stick' do
-	erb :stick
-end
+	get '/stick' do
+		erb :stick
+	end
 
-get '/dagger' do
-	erb :dagger
-end
+	get '/dagger' do
+		erb :dagger
+	end
 
-get '/sword' do
-	erb :sword
-end
+	get '/sword' do
+		erb :sword
+	end
 
-get '/death' do
-	erb :death
-end
+	get '/death' do
+		erb :death
+	end
 
-get '/funeral' do
-	erb :funeral
-end
+	get '/funeral' do
+		erb :funeral
+	end
