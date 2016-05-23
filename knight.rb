@@ -1,3 +1,3 @@
 require 'pry'
 require 'sinatra'
-require_relative '/lib/'
+require_relative 'lib/main.rb'
