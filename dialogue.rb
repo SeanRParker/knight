@@ -10,8 +10,8 @@ input name
 "Why hello Sir #{name}. May I challenge you to a duel?"
   "But, I'm a lady."
     - "Oh, sorry, Lady #{name}, may I challenge you to a duel?" loops back
-  "Why are we fighting?"
-    - "You are trespassing on the king's hunting grounds. I'm a knight, I'm supposed to kill anyone who commits crimes against the king's property, but I like to give my foe a sporting chance."
+  # "Why are we fighting?"
+  #   - "You are trespassing on the king's hunting grounds. I'm a knight, I'm supposed to kill anyone who commits crimes against the king's property, but I like to give my foe a sporting chance."
 X "Alright, let's do this!"
   "No. I refuse to fight you."
     - Knight kills you anyway. "Well, I did give you a chance."

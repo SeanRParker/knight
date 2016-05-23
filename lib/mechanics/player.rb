@@ -1,6 +1,6 @@
 module Mechanics
 	class Player
-		attr_accessor :name, :story
+		attr_accessor :name
 
 		def initialize(name)
 			@name = name
