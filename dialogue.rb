@@ -11,7 +11,8 @@ input name
   "But, I'm a lady."
     - "Oh, sorry, Lady #{name}, may I challenge you to a duel?" loops back
   "Why are we fighting?"
-  X  - "You are trespassing on the king's hunting grounds. I'm a knight, I'm supposed to kill anyone who commits crimes against the king's property, but I like to give my foe a sporting chance."
+    - "You are trespassing on the king's hunting grounds. I'm a knight, I'm supposed to kill anyone who commits crimes against the king's property, but I like to give my foe a sporting chance."
+X "Alright, let's do this!"
   "No. I refuse to fight you."
     - Knight kills you anyway. "Well, I did give you a chance."
 
@@ -41,5 +42,5 @@ Sir Jabsalot kneels prostrate before you. "I yield. If you let me live, I'll tak
   You're in town and ask the locals where the nearest pub is "Ye Olde Inn" (how cliche).
 
 # Question 5
-  Options 1) Have a pint. If you have too many you pass out and start all over.
-          2) That's enough. (after 3 drinks, you get drunk and pass out. If you stop before then, you win.)
+  Options 1) Have a pint. If you have too many you pass out and start all over. "Sleep well"
+          2) That's enough. (after 3 drinks, you get drunk and pass out.  If you stop before then, you win.)
