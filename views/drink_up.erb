@@ -1,0 +1,16 @@
+while true
+  <p>Welcome to Ye Olde Inn!</p>
+  <p>Want a pint?</p>
+  <% gets.strip.downcase%>
+  <% if get_pint == 'y' || 'yes' || 'Yes' %>
+    <p>Cheers!</p>
+  <% elsif get_pint == 'n' || 'no' || 'No' %>
+    <p>You didn't get home to present day, but you didn't pass out drunk in the Dark Ages. Let's count this as a win.</p>
+
+  <% else %>
+    <p>Yes or No man!</p>
+  <% end %>
+    <% `say sleep well`  if get_pint > 3 #route to wake up in the woods%>
+end
+
+<% %>

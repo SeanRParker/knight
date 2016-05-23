@@ -7,7 +7,7 @@
 input name
 
 # Question 2
-"Why hello Sir #{name}? May I challenge you to a duel?"
+"Why hello Sir #{name}. May I challenge you to a duel?"
   "But, I'm a lady."
     - "Oh, sorry, Lady #{name}, may I challenge you to a duel?" loops back
   "Why are we fighting?"
