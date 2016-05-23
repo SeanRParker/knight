@@ -28,6 +28,26 @@ post '/name' do
     erb :story
 end
 
+get '/duel' do
+	erb :duel
+end
 
+get '/stick' do
+	erb :stick
+end
 
+get '/dagger' do
+	erb :dagger
+end
 
+get '/sword' do
+	erb :sword
+end
+
+get '/death' do
+	erb :death
+end
+
+get '/funeral' do
+	erb :funeral
+end
