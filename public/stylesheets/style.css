@@ -3,6 +3,7 @@
 div.wrapper{
 	margin:30px auto;
 	width:40%;
+	text-align: center;
 }
 
 
@@ -72,12 +73,5 @@ nav a {
 	opacity: 1;
 }
 
-img {
-	margin-left: 400px;
-}
 
-p{
-	margin-left: 70px;
-	text-align: center;
-}
 
