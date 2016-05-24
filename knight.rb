@@ -83,8 +83,8 @@ $player = Mechanics::Player.new(" ")
       erb :win
     elsif amount > 3
       erb :pass_out
-    elsif amount == 0
-      erb :pints_error
+    # elsif amount = 0
+    #   erb :pints_error
     else
       erb :pints_error
     end
