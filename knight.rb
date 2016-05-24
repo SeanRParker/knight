@@ -43,25 +43,6 @@ $player = Mechanics::Player.new(" ")
     erb :live
 	end
 
-	post '/name' do
-		@name = params[:name]
-	    $player.name = @name
-	    erb :story
-	end
-
-  post '/pints' do
-    amount = (params[:amount]).strip.to_i
-    if amount <= 3
-      erb :win
-    elsif amount > 3
-      erb :pass_out
-    elsif amount == 0
-      erb :pints_error
-    else
-      erb :pints_error
-    end
-  end
-
   get '/town' do
     erb :town
   end
@@ -89,3 +70,22 @@ $player = Mechanics::Player.new(" ")
 	get '/funeral' do
 		erb :funeral
 	end
+
+  post '/name' do
+    @name = params[:name]
+      $player.name = @name
+      erb :story
+  end
+
+  post '/pints' do
+    amount = (params[:amount]).strip.to_i
+    if amount < 4
+      erb :win
+    elsif amount > 3
+      erb :pass_out
+    elsif amount == 0
+      erb :pints_error
+    else
+      erb :pints_error
+    end
+  end
