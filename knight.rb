@@ -46,11 +46,26 @@ $player = Mechanics::Player.new(" ")
     erb :live
 	end
 
+  get '/win' do
+    "You didn't make it home to your own time, but you didn't pass out drunk in the Dark Ages. Let's count this as a win."
+  end
+
 	post '/name' do
 		@name = params[:name]
 	    $player.name = @name
 	    erb :story
 	end
+
+  post '/pints' do
+    amount = (params[:amount]).strip.to_i
+    if amount <= 3
+      erb :win
+    elsif amount > 3
+      erb :pass_out
+    else
+      erb :pints_error
+    end
+  end
 
   get '/town' do
     erb :town
