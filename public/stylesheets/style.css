@@ -1,4 +1,18 @@
+
+/*---------------Wrapper-------------------*/
+div.wrapper{
+	margin:30px auto;
+	width:40%;
+}
+
+
 /*---------------Weapon-------------------*/
+nav a {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+}
+
 .weapon a {
 	margin: 0 20px;
 	padding: 18px 20px;
@@ -66,3 +80,4 @@ p{
 	margin-left: 70px;
 	text-align: center;
 }
+

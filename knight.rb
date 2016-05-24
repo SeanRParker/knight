@@ -28,16 +28,13 @@ $player = Mechanics::Player.new(" ")
 	end
 
 	get '/decline' do
-		
+
 		"Knight kills you anyway."
 		"Well, I did give you a chance."
 	end
 
 	get '/kill' do
-		"I can find my own way.
-		""(This option keeps you lost and you can't find the way. 
-		You eventually die of starvation. embarassing messages ensue)
-	    death module"
+		erb :kill
 	end
 
 	get '/steal' do
@@ -50,7 +47,7 @@ $player = Mechanics::Player.new(" ")
 	get '/live' do
 		"Sure. I could use the help, I don't know where I am"
 	    "Sir Jabsalot tells you,"
-	    "Walk that way for 100 paces, there'll be a road. Follow it to the right for two miles and you'll be in town." 
+	    "Walk that way for 100 paces, there'll be a road. Follow it to the right for two miles and you'll be in town."
 	    "You trust him and end up in town."
 	end
 
