@@ -2,6 +2,8 @@
 .weapon a {
 	margin: 0 20px;
 	padding: 18px 20px;
+	text-decoration: none;
+
 }
 
 .weapon a::before,
@@ -32,11 +34,10 @@
 	display: block;
 	padding: 8px 0 0 0;
 	color: rgba(0,0,0,0.4);
-	text-shadow: none;
 	text-transform: none;
 	font-style: italic;
 	font-size: 0.75em;
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-family: Palatino;
 	opacity: 0;
 }
 
@@ -55,4 +56,13 @@
 .weapon a:hover span:last-child,
 .weapon a:focus span:last-child {
 	opacity: 1;
+}
+
+img {
+	margin-left: 400px;
+}
+
+p{
+	margin-left: 70px;
+	text-align: center;
 }
