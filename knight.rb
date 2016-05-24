@@ -36,10 +36,7 @@ $player = Mechanics::Player.new(" ")
 	end
 
 	get '/steal' do
-		 "I'll let you live, but I'm taking these."
-		 "(You proceed to take Sir Jabsalot's horse and sword)
-		 The horse leads you to the nearest town, because horses are smart, and that's where he happens to stable.
-		 Once at the stable he refuses to go anywhere else with you, but at least you're in town."
+		 erb :steal
 	end
 
 	get '/live' do
