@@ -28,9 +28,7 @@ $player = Mechanics::Player.new(" ")
 	end
 
 	get '/decline' do
-
-		"Knight kills you anyway."
-		"Well, I did give you a chance."
+    erb :decline
 	end
 
 	get '/kill' do
@@ -45,10 +43,7 @@ $player = Mechanics::Player.new(" ")
 	end
 
 	get '/live' do
-		"Sure. I could use the help, I don't know where I am"
-	    "Sir Jabsalot tells you,"
-	    "Walk that way for 100 paces, there'll be a road. Follow it to the right for two miles and you'll be in town."
-	    "You trust him and end up in town."
+    erb :live
 	end
 
 	post '/name' do
@@ -57,7 +52,9 @@ $player = Mechanics::Player.new(" ")
 	    erb :story
 	end
 
-
+  get '/town' do
+    erb :town
+  end
 
 	get '/duel' do
 		erb :duel
