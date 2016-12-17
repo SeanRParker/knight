@@ -35,6 +35,10 @@ $player = Mechanics::Player.new(" ")
 		erb :kill
 	end
 
+	# get '/display' do
+	# 	erb :display
+	# end
+
 	get '/steal' do
 		 erb :steal
 	end
@@ -81,10 +85,8 @@ $player = Mechanics::Player.new(" ")
     amount = (params[:amount]).strip.to_i
     if amount < 4
       erb :win
-    elsif amount > 3
+    elsif amount >= 4
       erb :pass_out
-    # elsif amount = 0
-    #   erb :pints_error
     else
       erb :pints_error
     end
